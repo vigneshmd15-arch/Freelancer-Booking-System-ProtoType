@@ -1,0 +1,116 @@
+/* General styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #263238;
+}
+
+/* Main application */
+.app-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+/* Header */
+h1 {
+    color: #173b70;
+    text-align: center;
+    margin-bottom: 12px;
+    font-size: 32px;
+}
+
+h2 {
+    color: #263b5e;
+    margin: 25px 0;
+}
+
+/* Freelancer cards */
+.freelancer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 22px;
+}
+
+.freelancer-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.freelancer-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.12);
+}
+
+.freelancer-card h3 {
+    color: #174ea6;
+    margin-bottom: 12px;
+}
+
+.freelancer-card p {
+    margin: 10px 0;
+    color: #596579;
+    line-height: 1.5;
+}
+
+/* Buttons */
+button {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 11px 18px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 5px;
+}
+
+button:hover {
+    background: #1746b0;
+}
+
+/* Forms and inputs */
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0 15px;
+    border: 1px solid #d1d9e6;
+    border-radius: 7px;
+    outline: none;
+    font-size: 14px;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 4px rgba(37, 99, 235, 0.25);
+}
+
+/* Booking section */
+.booking-section,
+.availability-section {
+    background: white;
+    padding: 25px;
+    margin-top: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+/* Mobile responsive */
+@media (max-width: 600px) {
+    .app-container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+}
